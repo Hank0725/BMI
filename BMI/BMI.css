@@ -103,13 +103,21 @@ margin-top: 10px;
   right: 120px;
 }
 
-.button:hover{background-color:rgb(85, 255, 218);}
+.button:hover{
+  cursor: pointer;
+  box-shadow:10px 10px 10px  rgb(237, 243, 242);}
+
+.button:active{
+
+  box-shadow:10px 10px 10px rgb(245, 253, 253);}
 
 .content{
     max-height: 60%;
     text-align: center;
     background-color:rgb(245, 239, 239);
 }
+
+ 
 
 h3{
     font-size: 22px;
@@ -120,46 +128,120 @@ h3{
 
 
 
+.result{
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  font-size: 10px;
+  color:black;
+  background-color: rgb(33, 215, 228);
+  border-radius: 50%;
+  top: 60px;
+  right: 120px;
+}
+
+.result:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px white;  
+}
+
+.circyleBMI{
+ font-size: 30px;
+ position: absolute;
+ top: 40%;
+ left: 33%;
+}
+
+.smallcircle{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color:white ;
+  border-radius: 50%;
+  top:140px;
+  right:0px
+}
+
+.outside{
+  position: absolute;
+  font-size: 20px;
+  top: 150px;
+  right: 30px;
+}
+#circlelightfat{
+  border:10px solid #00B8D4;
+  font-style: #00B8D4;
+}
+#circleidealfat{
+  border:10px solid #00C853;
+  font-style: #00C853;
+}
+#circletoofat{
+  border:10px solid #FF6D00;
+  font-style:#FF6D00 ;
+}
+#circleveryfat{
+  border:10px solid rgb(197, 30, 30);
+  font-style:rgb(197, 30, 30) ;
+}
+#circlesuperfat{
+  border:10px solid rgb(90, 4, 4);
+  font-style:rgb(90, 4, 4) ;
+ 
+}
+#circlebigfat{
+  border:10px solid rgb(41, 4, 4);
+  font-style:  rgb(41, 4, 4);
+
+}
+
+
+
+
 #lightfat{
     border-left:3px solid #00B8D4;
-    color:#00B8D4;
+    font-style: #00B8D4;
   }
 #idealfat{
     border-left:3px solid #00C853;
-    color:#00C853;
+    font-style:#00C853;
   }
 #toofat{
     border-left:3px solid #FF6D00;
-    color:#FF6D00;
+    font-style: #FF6D00;
   }
 #veryfat{
     border-left:3px solid rgb(197, 30, 30);
-    color:#D50000;
+    font-style: rgb(197, 30, 30);
   }
 #superfat{
     border-left:3px solid rgb(90, 4, 4);
-    color:#D50000;
+    font-style: rgb(90, 4, 4);
   }
 #bigfat{
     border-left:3px solid rgb(41, 4, 4);
-    color:#2e0404;
+    font-style: rgb(41, 4, 4);
   }
 
 .list{
-    display:flex;
+    display: flex;
     align-items:center;
     justify-content:center;
     padding-top: 30px;
     padding-bottom: 50px;
+    margin-top: 20px;
+  
   }
 .list tr{
-   margin-top: 15px;
+   background-color: aliceblue;
+   margin-top: 10px;
+   margin-bottom: 20px;
   }
 .list th{
     border-left:3px solid rgb(230, 7, 7);
     padding-left:15px;
-    margin-top: 15px;
-    margin-bottom: 20px;
   }
 
 .list tr td{
@@ -167,6 +249,7 @@ h3{
     font-size:20px;
     text-shadow:1px 1px 0.5px rgb(27, 26, 26);
     padding:10px;
+    margin: 10px;
     }
 
 .list td a{
